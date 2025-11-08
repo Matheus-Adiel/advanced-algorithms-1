@@ -39,3 +39,9 @@
 
 # debug information files
 *.dwo
+
+#vim open archives
+*.swp
+
+#directory for my executables codes
+out/
