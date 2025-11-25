@@ -4,7 +4,10 @@
 using namespace std;
 
 unsigned long long lamps_on (unsigned long long qtd_lamps) {
-    usigned long long lamps_on = qtd_lamps - sqrt(qtd_lamps);
+    unsigned long long lamps_off = sqrt(qtd_lamps);
+    if (lamps_off * lamps_off > qtd_lamps) lamps_off--;
+    else if ((lamps_off + 1) * (lamps_off + 1) <= qtd_lamps) lamps_off++;
+    unsigned long long lamps_on = qtd_lamps - lamps_off;
     return lamps_on;
 }
 
