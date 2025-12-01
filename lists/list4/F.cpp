@@ -10,7 +10,7 @@ int main() {
     cin.tie(NULL);
 
     string input;
-    int count, max_count;
+    int count = 0, max_count = 0;
     stack<char> myStack;
     map<int, int> count_max;
 
